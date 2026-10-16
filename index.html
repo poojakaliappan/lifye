@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leafy – Plants & pots</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#">Leafy</a>
+  <input id="search" type="search" placeholder="Search plants, pots, tools" aria-label="Search products">
+  <button id="cartBtn" class="cart-btn" aria-label="Open cart">Cart <span id="count">0</span></button>
+</header>
+
+<section class="hero">
+  <h1>Green things for<br>small spaces.</h1>
+  <p>Hardy plants, handmade pots and the tools to look after them. Free delivery over ₹999.</p>
+  <a class="btn" href="#shop">Shop now</a>
+  <div class="blob b1">🌿</div><div class="blob b2">🪴</div><div class="blob b3">🌵</div>
+</section>
+
+<main id="shop">
+  <div class="bar">
+    <div id="filters" class="chips"></div>
+    <select id="sort" aria-label="Sort products">
+      <option value="">Featured</option>
+      <option value="low">Price: low to high</option>
+      <option value="high">Price: high to low</option>
+    </select>
+  </div>
+  <div id="grid" class="grid"></div>
+</main>
+
+<footer>© 2026 Leafy. Demo store – no real payments.</footer>
+
+<div id="overlay" class="overlay"></div>
+<aside id="drawer" class="drawer" aria-label="Shopping cart">
+  <div class="d-head"><h2>Your cart</h2><button id="close" aria-label="Close cart">✕</button></div>
+  <div id="items" class="items"></div>
+  <div class="d-foot">
+    <div class="total"><span>Total</span><strong id="total">₹0</strong></div>
+    <button id="checkout" class="btn full">Place order</button>
+  </div>
+</aside>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
